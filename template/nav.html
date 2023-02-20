@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://wireless-hipac.oss-cn-hangzhou.aliyuncs.com/css/table.css" type="text/css"
+          media="all">
+    <meta charset="utf-8">
+    <title>无线集团-Nav</title>
+</head>
+
+<body>
+
+<h1>{{.Version.Version}}</h1>
+<h2>路由相关</h2>
+<h3>本期修改</h3>
+{{range .RoutesDiff}}
+    <p>{{.}}</p>
+{{else}}
+    <p>Nothing</p>
+{{end}}
+<h3>明细</h3>
+<table class="grid">
+    <tr>
+        <th>序号</th>
+        <th>路由</th>
+        <th>类名</th>
+        <th>参数</th>
+        <th>拦截器</th>
+        <th>注释</th>
+    </tr>
+    {{range $i,$v:=.Routes}}
+        <tr>
+            <td>{{$i}}</td>
+            <td>{{$v.Route}}</td>
+            <td>{{$v.ClassName}}</td>
+            <td>
+                {{range .ArgList}}
+                    <li>{{.ParamName}}({{.FieldName}})</li>
+                {{end}}
+            </td>
+            <td>
+                {{range .InterceptorList}}
+                    <li>{{.}}</li>
+                {{end}}
+            </td>
+            <td>{{$v.Comment}}</td>
+        </tr>
+    {{end}}
+</table>
+
+<hr/>
+
+{{range .Services}}
+    <h2>{{.Service.Service}}相关</h2>
+    <h3>本期修改</h3>
+    {{range .ServiceDiff}}
+        <p>{{.}}</p>
+    {{else}}
+        <p>Nothing</p>
+    {{end}}
+    <h3>明细</h3>
+    <table class="grid">
+        <tr>
+            <th>序号</th>
+            <th>标识</th>
+            <th>实现类</th>
+            <th>参数</th>
+            <th>注释</th>
+        </tr>
+        {{range $i,$v:=.Service.ImplList}}
+            <tr>
+                <td>{{$i}}</td>
+                <td>{{$v.Token}}</td>
+                <td>{{$v.ImplName}}</td>
+                <td>
+                    <pre>{{$v.ParamJson}}</pre>
+                </td>
+                <td>
+                    <pre>{{$v.Comment}}</pre>
+                </td>
+            </tr>
+        {{end}}
+    </table>
+{{end}}
+
+</body>
+
+</html>

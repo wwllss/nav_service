@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/go/go1.15.4" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1l08cdw0rq6Ydzohgo1oAeWu4qx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/template" />
+      <recent name="$PROJECT_DIR$/static/css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/template" />
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/jsbridge" />
+      <recent name="$PROJECT_DIR$/db" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build wireless_service" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="wireless_service" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-tags dev" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="nav_service" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="换表" />
+    <MESSAGE value="校验" />
+    <MESSAGE value="ip" />
+    <MESSAGE value="200" />
+    <MESSAGE value="sql" />
+    <MESSAGE value="\n换行" />
+    <MESSAGE value="增加参数" />
+    <MESSAGE value="环境配置" />
+    <MESSAGE value="私有化" />
+    <MESSAGE value="配置应用" />
+    <MESSAGE value="jsbridge.html" />
+    <MESSAGE value="样式修改" />
+    <MESSAGE value="css 上传到oss" />
+    <MESSAGE value="remove css" />
+    <MESSAGE value="模板整理" />
+    <MESSAGE value="delete" />
+    <MESSAGE value="bug 修改" />
+    <MESSAGE value="favicon.ico" />
+    <MESSAGE value="db close" />
+    <MESSAGE value="分类完成" />
+    <MESSAGE value="注释处理" />
+    <MESSAGE value="应用内" />
+    <MESSAGE value="ignore" />
+    <MESSAGE value="bug" />
+    <MESSAGE value="fix ios .99 version" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix ios .99 version" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1366" y="205" key="CommitChangelistDialog2" timestamp="1669015204205">
+      <screen x="-1920" y="105" width="1920" height="1055" />
+    </state>
+    <state x="-1366" y="205" key="CommitChangelistDialog2/0.25.1920.1175/-1920.105.1920.1055@-1920.105.1920.1055" timestamp="1669015204205" />
+    <state width="1878" height="97" key="GridCell.Tab.0.bottom" timestamp="1676892196506">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
+    <state width="1878" height="97" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1676892196506" />
+    <state width="1878" height="97" key="GridCell.Tab.0.center" timestamp="1676892196505">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
+    <state width="1878" height="97" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1676892196505" />
+    <state width="1878" height="97" key="GridCell.Tab.0.left" timestamp="1676892196503">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
+    <state width="1878" height="97" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1676892196503" />
+    <state width="1878" height="97" key="GridCell.Tab.0.right" timestamp="1676892196506">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
+    <state width="1878" height="97" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1676892196506" />
+    <state x="469" y="248" key="SettingsEditor" timestamp="1676892350627">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
+    <state x="469" y="248" key="SettingsEditor/0.25.1920.1175@0.25.1920.1175" timestamp="1676892350627" />
+    <state x="-1360" y="369" key="Vcs.Push.Dialog.v2" timestamp="1669015206086">
+      <screen x="-1920" y="105" width="1920" height="1055" />
+    </state>
+    <state x="-1360" y="369" key="Vcs.Push.Dialog.v2/0.25.1920.1175/-1920.105.1920.1055@-1920.105.1920.1055" timestamp="1669015206086" />
+    <state x="661" y="338" width="597" height="548" key="find.popup" timestamp="1676892279802">
+      <screen x="0" y="25" width="1920" height="1175" />
+    </state>
+    <state x="661" y="338" width="597" height="548" key="find.popup/0.25.1920.1175@0.25.1920.1175" timestamp="1676892279802" />
+  </component>
+</project>

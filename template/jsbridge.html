@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://wireless-hipac.oss-cn-hangzhou.aliyuncs.com/css/common.css" type="text/css"
+          media="all">
+    <link rel="stylesheet" href="https://wireless-hipac.oss-cn-hangzhou.aliyuncs.com/css/docPreview.css" type="text/css"
+          media="all">
+    <link rel="stylesheet" href="https://wireless-hipac.oss-cn-hangzhou.aliyuncs.com/css/table.css" type="text/css"
+          media="all">
+    <meta charset="utf-8">
+    <title>JsBridge</title>
+</head>
+
+<body>
+
+<p style="font-size: 36px;text-align: center;color: #FA3246;padding: 50px">{{.Version}}</p>
+
+<div id="root" class="container column__3">
+    <div class="container__sidebar">
+        <section class="sidebar">
+            <div class="sidebar__title">索引</div>
+            <ul class="sidebar__categories list-reset">
+                <li class="sidebar__category open">
+                    <a class="sidebar__category-title action-toggle">
+                        <span class="icon__triangle"></span>
+                        通用
+                    </a>
+                    <ul class="sidebar__businesses list-reset">
+                        {{range .Common}}
+                            <li class="sidebar__business">
+                                <a href="#_Common_{{.Index}}" class="sidebar__business-title action-toggle">{{.Index}}
+                                    .{{.Comment}}</a>
+                            </li>
+                        {{end}}
+                    </ul>
+                </li>
+                <li class="sidebar__category open">
+                    <a class="sidebar__category-title action-toggle">
+                        <span class="icon__triangle"></span>
+                        Mall
+                    </a>
+                    <ul class="sidebar__businesses list-reset">
+                        {{range .Mall.Common}}
+                            <li class="sidebar__business open">
+                                <a href="#_Mall_{{.Index}}" class="sidebar__business-title action-toggle"
+                                   id="category-959">
+                                    {{.Index}}.{{.Comment}}
+                                </a>
+                            </li>
+                        {{end}}
+                        <li class="sidebar__business open">
+                            <a class="sidebar__business-title action-toggle" id="category-959">
+                                <span class="icon__triangle"></span>
+                                Android
+                            </a>
+                            <ul class="sidebar__posts list-reset">
+                                {{range .Mall.Android}}
+                                    <li class="sidebar__post">
+                                        <a href="#_Mall_Android_{{.Index}}"
+                                           class="action-linkto-pages sidebar__post-title">
+                                            {{.Index}}.{{.Comment}}
+                                        </a>
+                                    </li>
+                                {{else}}
+                                    <li class="sidebar__post">
+                                        <a class="action-linkto-pages sidebar__post-title"
+                                           style="font-size: 10px;line-height: 1">
+                                            无
+                                        </a>
+                                    </li>
+                                {{end}}
+                            </ul>
+                        </li>
+                        <li class="sidebar__business open">
+                            <a class="sidebar__business-title action-toggle" id="category-959">
+                                <span class="icon__triangle"></span>
+                                iOS
+                            </a>
+                            <ul class="sidebar__posts list-reset">
+                                {{range .Mall.IOS}}
+                                    <li class="sidebar__post">
+                                        <a href="#_Mall_iOS_{{.Index}}"
+                                           class="action-linkto-pages sidebar__post-title">{{.Index}}
+                                            .{{.Comment}}
+                                        </a>
+                                    </li>
+                                {{else}}
+                                    <li class="sidebar__post">
+                                        <a class="action-linkto-pages sidebar__post-title"
+                                           style="font-size: 10px;line-height: 1">
+                                            无
+                                        </a>
+                                    </li>
+                                {{end}}
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="container__content">
+        <div class="center post__title">明细</div>
+        <div class="post__body">
+            <h1 class="center">Common</h1>
+            {{range .Common}}
+                <h2 id="_Common_{{.Index}}">{{.Index}}.{{.Token}}</h2>
+                <p></p>
+                <p>{{.Comment}}</p>
+                <p></p>
+                {{range .Params}}
+                    <p class="desc">{{.Name}}说明</p>
+                    <table class="grid">
+                        <tr>
+                            <th>字段</th>
+                            <th>释义</th>
+                        </tr>
+                        {{range .Kvs}}
+                            <tr>
+                                <td>{{.Key}}</td>
+                                <td>{{.Value}}</td>
+                            </tr>
+                        {{end}}
+                    </table>
+                {{else}}
+                    <p class="desc">入参说明：无参数</p>
+                {{end}}
+                <p></p>
+                <p class="desc">示例：</p>
+                <pre style="color: #666666">{{.Example}}</pre>
+                <hr/>
+            {{end}}
+            <h1 class="center">Mall</h1>
+            {{range .Mall.Common}}
+                <h2 id="_Mall_{{.Index}}">{{.Index}}.{{.Token}}</h2>
+                <p></p>
+                <p>{{.Comment}}</p>
+                <p></p>
+                {{range .Params}}
+                    <p class="desc">{{.Name}}说明</p>
+                    <table class="grid">
+                        <tr>
+                            <th>字段</th>
+                            <th>释义</th>
+                        </tr>
+                        {{range .Kvs}}
+                            <tr>
+                                <td>{{.Key}}</td>
+                                <td>{{.Value}}</td>
+                            </tr>
+                        {{end}}
+                    </table>
+                {{else}}
+                    <p class="desc">入参说明：无参数</p>
+                {{end}}
+                <p></p>
+                <p class="desc">示例：</p>
+                <pre style="color: #666666">{{.Example}}</pre>
+                <hr/>
+            {{end}}
+            <h1 class="center">Android</h1>
+            {{range .Mall.Android}}
+                <h2 id="_Mall_Android_{{.Index}}">{{.Index}}.{{.Token}}</h2>
+                <p></p>
+                <p>{{.Comment}}</p>
+                <p></p>
+                {{range .Params}}
+                    <p class="desc">{{.Name}}说明</p>
+                    <table class="grid">
+                        <tr>
+                            <th>字段</th>
+                            <th>释义</th>
+                        </tr>
+                        {{range .Kvs}}
+                            <tr>
+                                <td>{{.Key}}</td>
+                                <td>{{.Value}}</td>
+                            </tr>
+                        {{end}}
+                    </table>
+                {{else}}
+                    <p class="desc">入参说明：无参数</p>
+                {{end}}
+                <p></p>
+                <p class="desc">示例：</p>
+                <pre style="color: #666666">{{.Example}}</pre>
+                <hr/>
+            {{else}}
+                <p class="center">无</p>
+            {{end}}
+            <h1 class="center">iOS</h1>
+            {{range .Mall.IOS}}
+                <h2 id="_Mall_iOS_{{.Index}}">{{.Index}}.{{.Token}}</h2>
+                <p></p>
+                <p>{{.Comment}}</p>
+                <p></p>
+                {{range .Params}}
+                    <p class="desc">{{.Name}}说明</p>
+                    <table class="grid">
+                        <tr>
+                            <th>字段</th>
+                            <th>释义</th>
+                        </tr>
+                        {{range .Kvs}}
+                            <tr>
+                                <td>{{.Key}}</td>
+                                <td>{{.Value}}</td>
+                            </tr>
+                        {{end}}
+                    </table>
+                {{else}}
+                    <p class="desc">入参说明：无参数</p>
+                {{end}}
+                <p></p>
+                <p class="desc">示例：</p>
+                <pre style="color: #666666">{{.Example}}</pre>
+                <hr/>
+            {{else}}
+                <p class="center">无</p>
+            {{end}}
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
