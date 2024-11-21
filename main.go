@@ -1,6 +1,7 @@
 package main
 
 import (
+	"nav_service/config"
 	"nav_service/dao"
 	"nav_service/hione"
 	"nav_service/hop"
@@ -19,7 +20,8 @@ func main() {
 	route.Register(h)
 	hione.Register(h)
 	jsbridge.Register(h)
-	if err := h.Run(":9596"); err != nil {
+	c := config.GetConfig()
+	if err := h.Run(":" + c.Hop.Port); err != nil {
 		panic(err)
 	}
 }
