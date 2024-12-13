@@ -13,14 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/nav_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nav_service.iml" afterDir="false" />
+    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="log">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hop/hop.go" beforeDir="false" afterPath="$PROJECT_DIR$/hop/hop.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/recovery.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/route/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rt_time.go" beforeDir="false" afterPath="$PROJECT_DIR$/rt_time.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +29,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file:///usr/local/opt/go/libexec" />
+  <component name="GOROOT" url="file://$USER_HOME$/env/go/go1.23.4" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -51,6 +46,9 @@
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -76,7 +74,8 @@
     "last_opened_file_path": "/Users/zhangyuan",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "go.sdk"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -157,7 +156,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ip" />
     <MESSAGE value="200" />
     <MESSAGE value="sql" />
     <MESSAGE value="\n换行" />
@@ -182,7 +180,8 @@
     <MESSAGE value="fix ios .99 version" />
     <MESSAGE value="first commit" />
     <MESSAGE value="database" />
-    <option name="LAST_COMMIT_MESSAGE" value="database" />
+    <MESSAGE value="log" />
+    <option name="LAST_COMMIT_MESSAGE" value="log" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

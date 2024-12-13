@@ -49,7 +49,7 @@ func (group *NavGroup) Use(middlewares ...NavHandlerFunc) {
 }
 
 func (group *NavGroup) AddRoute(method string, path string, handler NavHandlerFunc) {
-	hilog.Infof("AddRoute by Group : %s", group.prefix)
+	hilog.Infof("Add route \"%s\" by group %s", path, group.prefix)
 	group.hop.nav.AddRoute(method, group.prefix+path, handler)
 }
 
