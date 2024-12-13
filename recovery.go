@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"log"
+	"nav_service/hilog"
 	"nav_service/hop"
 	"net/http"
 	"runtime"
@@ -13,7 +13,7 @@ var Recovery hop.NavHandlerFunc = func(c *hop.Context) {
 	defer func() {
 		if err := recover(); err != nil {
 			message := fmt.Sprintf("%s", err)
-			log.Printf("%s\n\n", trace(message))
+			hilog.Infof("%s\n\n", trace(message))
 			c.String(http.StatusInternalServerError, "Internal Server Error")
 		}
 	}()

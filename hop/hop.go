@@ -1,7 +1,7 @@
 package hop
 
 import (
-	"log"
+	"nav_service/hilog"
 	"net/http"
 	"strings"
 )
@@ -49,7 +49,7 @@ func (group *NavGroup) Use(middlewares ...NavHandlerFunc) {
 }
 
 func (group *NavGroup) AddRoute(method string, path string, handler NavHandlerFunc) {
-	log.Printf("AddRoute by Group : %s", group.prefix)
+	hilog.Infof("AddRoute by Group : %s", group.prefix)
 	group.hop.nav.AddRoute(method, group.prefix+path, handler)
 }
 

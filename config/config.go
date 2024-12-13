@@ -2,8 +2,8 @@ package config
 
 import (
 	"errors"
-	"fmt"
 	"io/ioutil"
+	"nav_service/hilog"
 	"reflect"
 	"strconv"
 	"strings"
@@ -18,7 +18,7 @@ func GetConfig() Config {
 }
 
 func init() {
-	fmt.Println("环境是：" + flavor)
+	hilog.Info("环境是：" + flavor)
 	_ = Unmarshal()
 }
 
@@ -107,6 +107,8 @@ func unmarshalStruct(result interface{}, fieldsMap map[string]reflect.Value, lin
 			return err
 		}
 		field.SetFloat(f)
+	default:
+		hilog.Error("unsupported")
 	}
 	return unmarshalStruct(result, fieldsMap, lines, index+1)
 }

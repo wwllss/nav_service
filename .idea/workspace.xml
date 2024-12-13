@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -10,7 +13,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="" />
+    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/nav_service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nav_service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hop/hop.go" beforeDir="false" afterPath="$PROJECT_DIR$/hop/hop.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/recovery.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/route/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rt_time.go" beforeDir="false" afterPath="$PROJECT_DIR$/rt_time.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +34,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="$USER_HOME$/go/go1.15.4" />
+  <component name="GOROOT" url="file:///usr/local/opt/go/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -41,6 +52,9 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="1l08cdw0rq6Ydzohgo1oAeWu4qx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,17 +63,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Go Build.go build nav_service.executor": "Run",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/zhangyuan",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/template" />
@@ -79,9 +103,9 @@
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-tags dev" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$" />
       <package value="nav_service" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <configuration name="go build nav_service" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
@@ -89,11 +113,19 @@
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-tags dev" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$" />
       <package value="nav_service" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-d297c17c1fbd-b87a2f8923ed-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.21565.208" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-GO-243.21565.208" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SshConsoleOptionsProvider">
@@ -122,7 +154,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -156,68 +187,9 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="424" y="271" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1732174572205">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state x="424" y="271" width="1071" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.1175@0.25.1920.1175" timestamp="1732174572205" />
-    <state x="544" y="185" key="CommitChangelistDialog2" timestamp="1732478840810">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state x="544" y="185" key="CommitChangelistDialog2/0.25.1920.1175@0.25.1920.1175" timestamp="1732478840810" />
-    <state x="192" y="129" key="DiffContextDialog" timestamp="1732478836813">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state x="192" y="129" key="DiffContextDialog/0.25.1920.1175@0.25.1920.1175" timestamp="1732478836813" />
-    <state width="1878" height="582" key="GridCell.Tab.0.bottom" timestamp="1732478767621">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="582" key="GridCell.Tab.0.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1732478767621" />
-    <state width="1878" height="582" key="GridCell.Tab.0.center" timestamp="1732478767620">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="582" key="GridCell.Tab.0.center/0.25.1920.1175@0.25.1920.1175" timestamp="1732478767620" />
-    <state width="1878" height="582" key="GridCell.Tab.0.left" timestamp="1732478767620">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="582" key="GridCell.Tab.0.left/0.25.1920.1175@0.25.1920.1175" timestamp="1732478767620" />
-    <state width="1878" height="582" key="GridCell.Tab.0.right" timestamp="1732478767621">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="582" key="GridCell.Tab.0.right/0.25.1920.1175@0.25.1920.1175" timestamp="1732478767621" />
-    <state width="1878" height="442" key="GridCell.Tab.1.bottom" timestamp="1732477440979">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="442" key="GridCell.Tab.1.bottom/0.25.1920.1175@0.25.1920.1175" timestamp="1732477440979" />
-    <state width="1878" height="442" key="GridCell.Tab.1.center" timestamp="1732477440978">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="442" key="GridCell.Tab.1.center/0.25.1920.1175@0.25.1920.1175" timestamp="1732477440978" />
-    <state width="1878" height="442" key="GridCell.Tab.1.left" timestamp="1732477440977">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="442" key="GridCell.Tab.1.left/0.25.1920.1175@0.25.1920.1175" timestamp="1732477440977" />
-    <state width="1878" height="442" key="GridCell.Tab.1.right" timestamp="1732477440978">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state width="1878" height="442" key="GridCell.Tab.1.right/0.25.1920.1175@0.25.1920.1175" timestamp="1732477440978" />
-    <state x="661" y="367" width="597" height="490" key="find.popup" timestamp="1732174374876">
-      <screen x="0" y="25" width="1920" height="1175" />
-    </state>
-    <state x="661" y="367" width="597" height="490" key="find.popup/0.25.1920.1175@0.25.1920.1175" timestamp="1732174374876" />
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/dao/dao.go</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="GoApplicationRunConfiguration">
         <watch expression="config.GetConfig().Mysql.Dsn" />

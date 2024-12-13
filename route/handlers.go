@@ -150,7 +150,7 @@ func diff(old NavInfo, new NavInfo) []string {
 			cn = append(cn, n)
 		}
 		diff := Diff(co, cn)
-		hilog.Info("Diff %v", diff)
+		hilog.Infof("Diff %v", diff)
 		return diff
 	} else {
 		var oldData Service
@@ -166,7 +166,7 @@ func diff(old NavInfo, new NavInfo) []string {
 			cn = append(cn, n)
 		}
 		diff := Diff(co, cn)
-		hilog.Info("Diff %v", diff)
+		hilog.Infof("Diff %v", diff)
 		return diff
 	}
 }
