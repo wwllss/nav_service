@@ -14,8 +14,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="log">
+      <change afterPath="$PROJECT_DIR$/lottery/dlt.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lottery/lottery.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lottery/lottery_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lottery/random.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lottery/ssq.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fe7ac5f6-4fc9-45ba-b817-c202e9af51aa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fe7ac5f6-4fc9-45ba-b817-c202e9af51aa.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hop/hop.go" beforeDir="false" afterPath="$PROJECT_DIR$/hop/hop.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +72,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
     "Go Build.go build nav_service.executor": "Run",
+    "Go Test.TestLottery in nav_service/lottery.executor": "Run",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
@@ -96,7 +107,7 @@
       <recent name="$PROJECT_DIR$/db" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build nav_service">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="nav_service" />
       <working_directory value="$PROJECT_DIR$" />
@@ -117,6 +128,23 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestLottery in nav_service/lottery" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="nav_service" />
+      <working_directory value="$PROJECT_DIR$/lottery" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="nav_service/lottery" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestLottery\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestLottery in nav_service/lottery" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -187,12 +215,5 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="GoApplicationRunConfiguration">
-        <watch expression="config.GetConfig().Mysql.Dsn" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

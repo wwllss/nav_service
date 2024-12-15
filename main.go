@@ -6,6 +6,7 @@ import (
 	"nav_service/hione"
 	"nav_service/hop"
 	"nav_service/jsbridge"
+	"nav_service/lottery"
 	"nav_service/route"
 )
 
@@ -20,6 +21,7 @@ func main() {
 	route.Register(h)
 	hione.Register(h)
 	jsbridge.Register(h)
+	lottery.Register(h)
 	c := config.GetConfig()
 	if err := h.Run(":" + c.Hop.Port); err != nil {
 		panic(err)
