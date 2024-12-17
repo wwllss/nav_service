@@ -13,11 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="lottery">
-      <change afterPath="$PROJECT_DIR$/dlt.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssq2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssq2.xml" afterDir="false" />
+    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="lottery history">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lottery/ssq.json" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/ssq.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,16 +86,17 @@
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/template" />
-      <recent name="$PROJECT_DIR$/static/css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/template" />
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/jsbridge" />
       <recent name="$PROJECT_DIR$/db" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lottery" />
+      <recent name="$PROJECT_DIR$/template" />
+      <recent name="$PROJECT_DIR$/static/css" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build nav_service">
@@ -177,7 +176,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="sql" />
     <MESSAGE value="\n换行" />
     <MESSAGE value="增加参数" />
     <MESSAGE value="环境配置" />
@@ -202,7 +200,8 @@
     <MESSAGE value="database" />
     <MESSAGE value="log" />
     <MESSAGE value="lottery" />
-    <option name="LAST_COMMIT_MESSAGE" value="lottery" />
+    <MESSAGE value="lottery history" />
+    <option name="LAST_COMMIT_MESSAGE" value="lottery history" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
