@@ -13,18 +13,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="log">
-      <change afterPath="$PROJECT_DIR$/lottery/dlt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/lottery.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/lottery_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/random.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lottery/ssq.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/utils.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/fe7ac5f6-4fc9-45ba-b817-c202e9af51aa.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/fe7ac5f6-4fc9-45ba-b817-c202e9af51aa.xml" afterDir="false" />
+    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="lottery">
+      <change afterPath="$PROJECT_DIR$/dlt.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssq2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssq2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +177,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="200" />
     <MESSAGE value="sql" />
     <MESSAGE value="\n换行" />
     <MESSAGE value="增加参数" />
@@ -209,7 +201,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="database" />
     <MESSAGE value="log" />
-    <option name="LAST_COMMIT_MESSAGE" value="log" />
+    <MESSAGE value="lottery" />
+    <option name="LAST_COMMIT_MESSAGE" value="lottery" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
