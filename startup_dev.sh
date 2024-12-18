@@ -3,4 +3,4 @@
 rm -rf nav_service
 git pull
 go build -tags dev
-nohup ./nav_service conf/config.yaml > nav_service.log 2>&1 &
+nohup ./nav_service > nav_service.log &
