@@ -13,11 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="lottery history">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup_dev.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup_dev.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup_release.sh" beforeDir="false" afterPath="$PROJECT_DIR$/startup_release.sh" afterDir="false" />
-    </list>
+    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="mf" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,7 +173,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="\n换行" />
     <MESSAGE value="增加参数" />
     <MESSAGE value="环境配置" />
     <MESSAGE value="私有化" />
@@ -202,7 +197,8 @@
     <MESSAGE value="log" />
     <MESSAGE value="lottery" />
     <MESSAGE value="lottery history" />
-    <option name="LAST_COMMIT_MESSAGE" value="lottery history" />
+    <MESSAGE value="mf" />
+    <option name="LAST_COMMIT_MESSAGE" value="mf" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

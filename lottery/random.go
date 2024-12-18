@@ -40,11 +40,11 @@ func todayNum(c *hop.Context, t Type) {
 	}
 	err := dao.GetDB().Last(rl, "type = ?", t).Error
 	if err != nil {
-		c.String(http.StatusInternalServerError, "database error")
+		c.String(http.StatusInternalServerError, "未查到")
 		return
 	}
 	if !utils.IsToday(rl.CreatedAt) {
-		c.String(http.StatusOK, fmt.Sprintf("job not started, load num is:\n%s", rl.Nums))
+		c.String(http.StatusOK, fmt.Sprintf("任务未开始，上期号码为:\n%s", rl.Nums))
 		return
 	}
 	c.String(http.StatusOK, rl.Nums)
