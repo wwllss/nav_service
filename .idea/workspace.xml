@@ -13,27 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="history">
+    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="go 1.23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hione/hione.go" beforeDir="false" afterPath="$PROJECT_DIR$/hione/hione.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hop/context.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hop/hop.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hop/nav.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hop/trie.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsbridge/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/jsbridge/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsbridge/js_bridge.go" beforeDir="false" afterPath="$PROJECT_DIR$/jsbridge/js_bridge.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lottery/dlt.go" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/dlt.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lottery/lottery.go" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/lottery.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lottery/random.go" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/random.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lottery/ssq.go" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/ssq.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/recovery.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/route/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route/route.go" beforeDir="false" afterPath="$PROJECT_DIR$/route/route.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rt_time.go" beforeDir="false" afterPath="$PROJECT_DIR$/rt_time.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +48,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -79,30 +61,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build nav_service.executor": "Run",
-    "Go Test.TestLottery in nav_service/lottery.executor": "Run",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "master",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/zhangyuan",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "go.sdk"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build nav_service.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.TestLottery in nav_service/lottery.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zhangyuan&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;go.sdk&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/template" />
@@ -194,8 +176,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="环境配置" />
-    <MESSAGE value="私有化" />
     <MESSAGE value="配置应用" />
     <MESSAGE value="jsbridge.html" />
     <MESSAGE value="样式修改" />
@@ -219,7 +199,9 @@
     <MESSAGE value="lottery history" />
     <MESSAGE value="mf" />
     <MESSAGE value="history" />
-    <option name="LAST_COMMIT_MESSAGE" value="history" />
+    <MESSAGE value="zop" />
+    <MESSAGE value="go 1.23" />
+    <option name="LAST_COMMIT_MESSAGE" value="go 1.23" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
