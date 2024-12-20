@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"github.com/wwllss/zop"
 	"html/template"
 	"nav_service/dao"
-	"nav_service/hop"
 	"nav_service/route"
 	"net/http"
 	"reflect"
@@ -14,15 +14,15 @@ import (
 	"strings"
 )
 
-var jsBridgeHandler hop.NavHandlerFunc = func(c *hop.Context) {
+var jsBridgeHandler zop.NavHandlerFunc = func(c *zop.Context) {
 	jsBridge(c, dao.FindNewestVersion("Android", "com.ytmallapp"))
 }
 
-var jsBridgeByVersionHandler hop.NavHandlerFunc = func(c *hop.Context) {
+var jsBridgeByVersionHandler zop.NavHandlerFunc = func(c *zop.Context) {
 	jsBridge(c, dao.FindVersion("Android", "com.ytmallapp", c.Param("v")))
 }
 
-func jsBridge(c *hop.Context, nv dao.Version) {
+func jsBridge(c *zop.Context, nv dao.Version) {
 	common, android, ios := findCommon(getJsBridgeByVersion(nv, "cn.hipac.vm.webview.HvmJsBridge"),
 		getJsBridgeByVersion(dao.FindVersion("iOS", "Mall", nv.Version), "JSBridgeProtocol"))
 	mallCommon := make([]jsBridgeData, 0)

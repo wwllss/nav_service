@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"encoding/json"
 	"github.com/CatchZeng/dingtalk"
+	"github.com/wwllss/zop"
 	"html/template"
 	"nav_service/config"
 	"nav_service/dao"
 	"nav_service/hilog"
-	"nav_service/hop"
 	"net/http"
 	"strings"
 )
@@ -18,7 +18,7 @@ func init() {
 	_ = db.AutoMigrate(&NavInfo{})
 }
 
-var insertNavHandler hop.NavHandlerFunc = func(c *hop.Context) {
+var insertNavHandler zop.NavHandlerFunc = func(c *zop.Context) {
 	nv := dao.FindVersion(
 		c.PostForm("os"),
 		c.PostForm("app"),
@@ -49,7 +49,7 @@ var insertNavHandler hop.NavHandlerFunc = func(c *hop.Context) {
 	}
 }
 
-var notifyNavHandler hop.NavHandlerFunc = func(c *hop.Context) {
+var notifyNavHandler zop.NavHandlerFunc = func(c *zop.Context) {
 	nv := dao.FindVersion(
 		c.PostForm("os"),
 		c.PostForm("app"),
@@ -91,7 +91,7 @@ func ding(arr []string, v dao.Version) {
 	_, _ = client.Send(message)
 }
 
-var queryNavHandler hop.NavHandlerFunc = func(c *hop.Context) {
+var queryNavHandler zop.NavHandlerFunc = func(c *zop.Context) {
 	db := dao.GetDB()
 	os := c.Param("os")
 	app := c.Param("app")

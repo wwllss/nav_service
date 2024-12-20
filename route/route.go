@@ -1,11 +1,11 @@
 package route
 
 import (
-	"nav_service/hop"
+	"github.com/wwllss/zop"
 )
 
-func Register(h *hop.Hop) {
-	nav := h.Group("/nav")
+func Register(z *zop.Zop) {
+	nav := z.Group("/nav")
 	nav.POST("", insertNavHandler)
 	nav.POST("/notify", notifyNavHandler)
 	nav.GET("/:os/:app/:version", queryNavHandler)

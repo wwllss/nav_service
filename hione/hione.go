@@ -1,9 +1,9 @@
 package hione
 
 import (
+	"github.com/wwllss/zop"
 	"gorm.io/gorm"
 	"nav_service/dao"
-	"nav_service/hop"
 	"net/http"
 )
 
@@ -37,9 +37,9 @@ func init() {
 	_ = dao.GetDB().AutoMigrate(&apkTestUpdate{})
 }
 
-func Register(h *hop.Hop) {
-	g := h.Group("/hione")
-	g.POST("/apk", func(c *hop.Context) {
+func Register(z *zop.Zop) {
+	g := z.Group("/hione")
+	g.POST("/apk", func(c *zop.Context) {
 		db := dao.GetDB()
 		info := &apkTestUpdate{
 			Version:          c.PostForm("v"),
@@ -62,7 +62,7 @@ func Register(h *hop.Hop) {
 			c.String(http.StatusOK, "insert success")
 		}
 	})
-	g.POST("/update", func(c *hop.Context) {
+	g.POST("/update", func(c *zop.Context) {
 		db := dao.GetDB()
 		info := &apkTestUpdate{}
 		if err := db.Last(

@@ -13,9 +13,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="mf">
+    <list default="true" id="fc596c04-7c12-4723-afcd-e5b2c20a3974" name="Default Changelist" comment="history">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lottery/ssq.json" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/ssq.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hione/hione.go" beforeDir="false" afterPath="$PROJECT_DIR$/hione/hione.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hop/context.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hop/hop.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hop/nav.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hop/trie.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsbridge/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/jsbridge/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsbridge/js_bridge.go" beforeDir="false" afterPath="$PROJECT_DIR$/jsbridge/js_bridge.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lottery/dlt.go" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/dlt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lottery/lottery.go" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/lottery.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lottery/random.go" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/random.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lottery/ssq.go" beforeDir="false" afterPath="$PROJECT_DIR$/lottery/ssq.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/recovery.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/route/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route/route.go" beforeDir="false" afterPath="$PROJECT_DIR$/route/route.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rt_time.go" beforeDir="false" afterPath="$PROJECT_DIR$/rt_time.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +194,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="增加参数" />
     <MESSAGE value="环境配置" />
     <MESSAGE value="私有化" />
     <MESSAGE value="配置应用" />
@@ -201,7 +218,8 @@
     <MESSAGE value="lottery" />
     <MESSAGE value="lottery history" />
     <MESSAGE value="mf" />
-    <option name="LAST_COMMIT_MESSAGE" value="mf" />
+    <MESSAGE value="history" />
+    <option name="LAST_COMMIT_MESSAGE" value="history" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

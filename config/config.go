@@ -2,8 +2,8 @@ package config
 
 import (
 	"errors"
-	"io/ioutil"
 	"nav_service/hilog"
+	"os"
 	"reflect"
 	"strconv"
 	"strings"
@@ -23,7 +23,7 @@ func init() {
 }
 
 func Unmarshal() error {
-	data, err := ioutil.ReadFile("config/" + flavor + ".ini")
+	data, err := os.ReadFile("config/" + flavor + ".ini")
 	if err != nil {
 		return err
 	}

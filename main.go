@@ -1,10 +1,10 @@
 package main
 
 import (
+	"github.com/wwllss/zop"
 	"nav_service/config"
 	"nav_service/dao"
 	"nav_service/hione"
-	"nav_service/hop"
 	"nav_service/jsbridge"
 	"nav_service/lottery"
 	"nav_service/route"
@@ -15,15 +15,15 @@ func main() {
 	defer func() {
 		_ = db.Close()
 	}()
-	h := hop.New()
-	h.Use(RtTime)
-	h.Use(Recovery)
-	route.Register(h)
-	hione.Register(h)
-	jsbridge.Register(h)
-	lottery.Register(h)
+	z := zop.New()
+	z.Use(RtTime)
+	z.Use(Recovery)
+	route.Register(z)
+	hione.Register(z)
+	jsbridge.Register(z)
+	lottery.Register(z)
 	c := config.GetConfig()
-	if err := h.Run(":" + c.Hop.Port); err != nil {
+	if err := z.Run(":" + c.Hop.Port); err != nil {
 		panic(err)
 	}
 }

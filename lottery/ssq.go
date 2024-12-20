@@ -1,7 +1,7 @@
 package lottery
 
 import (
-	"nav_service/hop"
+	"github.com/wwllss/zop"
 )
 
 var ssqTime = "0 18 * * 0,2,4"
@@ -16,6 +16,6 @@ var ssqConfig = lottery{
 	sorted:     true,  // 排序号码
 }
 
-var ssqHandler = func(c *hop.Context) {
+var ssqHandler = func(c *zop.Context) {
 	todayNum(c, SSQ)
 }

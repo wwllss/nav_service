@@ -3,14 +3,17 @@ package lottery
 import (
 	"fmt"
 	"github.com/robfig/cron/v3"
+	"github.com/wwllss/zop"
 	"gorm.io/gorm"
+	"math/rand"
 	"nav_service/dao"
 	"nav_service/hilog"
-	"nav_service/hop"
 	"nav_service/utils"
 	"net/http"
 	"reflect"
+	"sort"
 	"strings"
+	"time"
 )
 
 type randomLottery struct {
@@ -34,7 +37,7 @@ func randomEveryday() {
 	c.Start()
 }
 
-func todayNum(c *hop.Context, t Type) {
+func todayNum(c *zop.Context, t Type) {
 	rl := &randomLottery{
 		Type: t,
 	}
@@ -95,4 +98,49 @@ func findLucky(l lottery) [][]int {
 		}
 	}
 	return nil
+}
+
+// generateLotteryNumbers 生成多个区的号码
+func generateLotteryNumbers(config lottery) [][]int {
+	// 使用当前时间戳创建一个新的随机源
+	source := rand.NewSource(time.Now().UnixNano())
+	r := rand.New(source)
+
+	var fullNums [][]int
+	// 生成每个区的号码
+	for _, zoneConfig := range config.zones {
+		nums := generateNumbers(r, zoneConfig.count, zoneConfig.max, config.duplicates)
+		fullNums = append(fullNums, nums)
+	}
+
+	// 如果需要排序，根据策略决定
+	if config.sorted {
+		for i := range fullNums {
+			sort.Ints(fullNums[i])
+		}
+	}
+
+	return fullNums
+}
+
+// generateNumbers 根据配置生成号码
+func generateNumbers(r *rand.Rand, count, numberRange int, allowDuplicates bool) []int {
+	var numbers []int
+	for len(numbers) < count {
+		num := r.Intn(numberRange) + 1
+		if allowDuplicates || !contains(numbers, num) {
+			numbers = append(numbers, num)
+		}
+	}
+	return numbers
+}
+
+// contains 检查切片中是否包含某个号码
+func contains(slice []int, num int) bool {
+	for _, n := range slice {
+		if n == num {
+			return true
+		}
+	}
+	return false
 }

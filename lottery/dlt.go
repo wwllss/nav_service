@@ -1,7 +1,7 @@
 package lottery
 
 import (
-	"nav_service/hop"
+	"github.com/wwllss/zop"
 )
 
 var dltTime = "0 18 * * 1,3,6"
@@ -16,6 +16,6 @@ var dltConfig = lottery{
 	sorted:     true,  // 排序号码
 }
 
-var dltHandler = func(c *hop.Context) {
+var dltHandler = func(c *zop.Context) {
 	todayNum(c, DLT)
 }

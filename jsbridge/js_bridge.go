@@ -1,11 +1,11 @@
 package jsbridge
 
 import (
-	"nav_service/hop"
+	"github.com/wwllss/zop"
 )
 
-func Register(h *hop.Hop) {
-	jsBridge := h.Group("/jsbridge")
+func Register(z *zop.Zop) {
+	jsBridge := z.Group("/jsbridge")
 	jsBridge.GET("", jsBridgeHandler)
 	jsBridge.GET("/:v", jsBridgeByVersionHandler)
 }

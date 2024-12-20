@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
+	"github.com/wwllss/zop"
 	"nav_service/hilog"
-	"nav_service/hop"
 	"net/http"
 	"runtime"
 	"strings"
 )
 
-var Recovery hop.NavHandlerFunc = func(c *hop.Context) {
+var Recovery zop.NavHandlerFunc = func(c *zop.Context) {
 	defer func() {
 		if err := recover(); err != nil {
 			message := fmt.Sprintf("%s", err)
